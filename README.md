@@ -3,6 +3,8 @@ KOA js webserver template for a quick start.
 
 Serving static files like js, css, ...
 
+HTML files go in the views folder
+
 nodejs and koa are both under the MIT license.
 
 # How to start
