@@ -7,6 +7,8 @@ const path = require('path');
 const app = new koa();
 const router = new koaRouter();
 
+// ------------------------------------------------------
+
 // serve files in static folder (css, js etc)
 app.use(serve(__dirname, '/static'));
 
@@ -26,4 +28,4 @@ async function index(ctx) {
 // router middelware
 app.use(router.routes()).use(router.allowedMethods()); 
 
-app.listen(3000, () => console.log("Server Started..."));
+app.listen(3000, () => console.log("Server Started...")); // open http://127.0.0.1:3000/
